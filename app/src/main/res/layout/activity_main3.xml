@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <EditText
+        android:id="@+id/editTextRadioNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Insira um numero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRadioNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="Insira um numero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRadioNum1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonSomar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somar"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="398dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSubtrair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtrair"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="430dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplicar"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividir"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="494dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/limparButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="76dp"
+        android:text="limpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
